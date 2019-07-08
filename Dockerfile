@@ -21,4 +21,4 @@ WORKDIR /app
 #ADD /Portfolio/*-error.html ./
 #ADD /Portfolio/nginx.conf.sigil /app/nginx.conf.sigil
 COPY --from=build /app/Portfolio/out ./
-ENTRYPOINT ["dotnet", "Portfolio.dll"]
+ENTRYPOINT ["dotnet", "ServerSample.dll"]
